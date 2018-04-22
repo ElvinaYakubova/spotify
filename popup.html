@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify controller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader" class = "loader">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <div id = "player" class = "player">
+        <!--<ul class="tabs">-->
+        <!--<li class="text-bold">-->
+        <!--<a href="#">Listen</a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="#">Download</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+
+        <!--<iframe src="https://open.spotify.com/embed?uri=spotify:user:erebore:playlist:788MOXyTfcUb1tdw4oC7KJ"-->
+        <!--width="300" height="80" frameborder="0" allowtransparency="true"></iframe>-->
+
+        <div class = "info">
+            <img src="" title="track cover" class="album-cover_large" id="cover-large">
+            <img src="" title="track cover" class="album-cover" id="cover">
+            <div class = "info info_track">
+                <p class = "title title_bold" id = "track"></p>
+                <p class = "title title_small" id="singer"></p>
+            </div>
+            <!--<div class = "volume">-->
+            <!--<i class = "fa fa-volume-up" id="volume"></i>-->
+            <!--<i class = "fa fa-plus" id="add"></i>-->
+            <!--</div>-->
+        </div>
+
+        <div class = "control-panel">
+            <button class = "control-panel__button fa fa-random disable" id="shuffle"></button>
+            <button class = "control-panel__button fa fa-step-backward" id="prev"></button>
+            <button class = "control-panel__button fa fa-play-circle-o" id="play"></button>
+            <button class = "control-panel__button fa fa-step-forward" id="next"></button>
+            <button class = "control-panel__button fa fa-repeat disable" id="repeat"></button>
+        </div>
+
+        <!--<div class="playback-bar">-->
+        <!--<div class="playback-bar__time" id="startTime">0:00</div>-->
+        <!--<div class="progress-bar">-->
+        <!--<div class="middle-align progress-bar__bg">-->
+        <!--<div class="progress-bar__timeline" id="timeline" style="width: 28%;"></div>-->
+        <!--<div class="middle-align progress-bar__slider" id="slider" style="left: 28%;"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="playback-bar__time" id="duration">4:20</div>-->
+        <!--</div>-->
+    </div>
+    <div id = "login" class = "login">Login or create account at <a href="https://www.spotify.com/">spotify.com</a></div>
+    <div id = "message" class = "message">Visit <a href="https://www.spotify.com/">spotify.com</a> and choose playlist</div>
+
+
+</body>
+</html>

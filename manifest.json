@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "Spotify Control",
+  "version": "1.0",
+  "description": "Spotify Web Player Shortcuts",
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "homepage_url": "https://www.spotify.com/",
+  "background": {
+    "scripts": ["request.bundle.js", "control.bundle.js", "auth.bundle.js", "background.bundle.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://play.spotify.com/*",
+        "https://player.spotify.com/*"
+      ],
+      "js": [
+        "content.bundle.js"
+      ]
+    }
+  ],
+  "permissions": ["tabs", "<all_urls>", "storage", "cookies", "https://www.spotify.com/", "https://open.spotify.com/", "activeTab"],
+  "browser_action": {
+    "default_icon": "img/spotify.png",
+    "default_title": "Spotify Web Player Shortcuts",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "player_next": {
+      "description": "Next track",
+      "global": true,
+      "suggested_key": {
+        "default": "MediaNextTrack"
+      }
+    },
+    "player_play": {
+      "description": "Play/Pause",
+      "global": true,
+      "suggested_key": {
+        "default": "MediaPlayPause"
+      }
+    },
+    "player_prev": {
+      "description": "Previous track",
+      "global": true,
+      "suggested_key": {
+        "default": "MediaPrevTrack"
+      }
+    },
+    "player_shuffle": {
+      "description": "Shuffle"
+    },
+    "player_repeat": {
+      "description": "Repeat"
+    }
+  }
+}

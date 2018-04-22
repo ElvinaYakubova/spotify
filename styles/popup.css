@@ -1,0 +1,125 @@
+body {
+    width: 300px;
+    background-color: #282828;
+    color: #fafafa;
+}
+
+.tabs {
+    font: normal 14px FontAwesome;
+    list-style: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs li {
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.tabs li:hover{
+    /*opacity: .7;*/
+    background-color: #fafafa;
+    color: black;
+}
+
+.tabs li:hover a {
+    color: black;
+}
+
+.tabs li a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.tabs li a:hover{
+    color: black;
+}
+
+.info {
+    padding: 16px 4px;
+}
+
+.info_track {
+    padding: 0;
+    margin: 0 60px 5px;
+}
+
+.title {
+    font: normal 18px FontAwesome;
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100px;
+    display: block;
+    overflow: hidden;
+    width: 172px;
+}
+
+.title_bold {
+    font-weight: bold;
+}
+
+.title_small {
+    font-size: 16px;
+    text-overflow: ellipsis;
+}
+
+.album-cover {
+    width: 50px;
+    height: 50px;
+    /*border: 1px solid black;*/
+    position: absolute;
+    top: 20px;
+}
+
+.album-cover_large {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.control-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.control-panel__button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    opacity: .9;
+}
+
+.control-panel__button:hover {
+    color: #ffffff;
+    opacity: 1;
+    -webkit-transform: scale(1.3);
+}
+
+.control-panel__button:focus {
+    outline: none;
+}
+
+.control-panel__button.fa {
+    color: #fafafa;
+}
+
+.control-panel__button.fa.fa-repeat.active ,
+.control-panel__button.fa.fa-random.active{
+    color: #1db954;
+}
+
+.control-panel__button.fa.fa-repeat.disable ,
+.control-panel__button.fa.fa-random.disable{
+    color: #fafafa;
+}
